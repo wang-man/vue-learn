@@ -9,11 +9,20 @@
   ></custom-input>
   <p>firstname:{{ state.nameOfFirst }}</p>
   <p>lastname:{{ state.nameOfLast }}</p>
+
+  <hr />
+  <b>作用域插槽的使用：</b>
+  <current-user>
+    <template v-slot:default="slotProps">
+      {{ slotProps.user.firstName }}
+    </template>
+  </current-user>
 </template>
 
 <script setup>
 import HelloWorld from "./components/HelloWorld.vue";
-import CustomInput from "./components/CustomInput.vue";
+import CustomInput from "./components/v-model/CustomInput.vue";
+import CurrentUser from "./components/slot/CurrentUser.vue";
 import Cat from "./assets/1.jpg";
 import { reactive } from "vue";
 import "./app.scss";
