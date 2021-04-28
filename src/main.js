@@ -1,12 +1,12 @@
 import { createApp } from 'vue'
 import App from './App.vue'
-// import { VueJsonp } from 'vue-jsonp';
+import router from './router';
+
 const app = createApp(App);
-// console.log(app)
-// 引入vueJsonp 可以请求jsonp接口
-// app.use(VueJsonp);
+
+//vue3配置全局变量
+app.config.globalProperties.$mySelf = (name) => `my name is ${name}`
+
+app.use(router);      // 注意，use一定要写在mount之前
 app.mount('#app');
-
-
-weixinShare.init('oRQ8DwUPie40F8Mx4n__H1paCBpg', 'PAZTCFGL_01', 'wx023f6d0bdec19833');
 

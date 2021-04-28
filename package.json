@@ -9,7 +9,8 @@
   "dependencies": {
     "sass": "^1.32.11",
     "vue": "^3.0.5",
-    "vue-jsonp": "^2.0.0"
+    "vue-jsonp": "^2.0.0",
+    "vue-router": "^4.0.6"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^1.2.1",

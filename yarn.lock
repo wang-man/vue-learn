@@ -478,6 +478,11 @@ vue-jsonp@^2.0.0:
   resolved "https://registry.npm.taobao.org/vue-jsonp/download/vue-jsonp-2.0.0.tgz#3bfac56bb72941a2511c11e1a123b876f03427f7"
   integrity sha1-O/rFa7cpQaJRHBHhoSO4dvA0J/c=
 
+vue-router@^4.0.6:
+  version "4.0.6"
+  resolved "https://registry.nlark.com/vue-router/download/vue-router-4.0.6.tgz#91750db507d26642f225b0ec6064568e5fe448d6"
+  integrity sha1-kXUNtQfSZkLyJbDsYGRWjl/kSNY=
+
 vue@^3.0.5:
   version "3.0.11"
   resolved "https://registry.npm.taobao.org/vue/download/vue-3.0.11.tgz#c82f9594cbf4dcc869241d4c8dd3e08d9a8f4b5f"
