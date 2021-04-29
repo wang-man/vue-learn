@@ -1,5 +1,7 @@
 <template>
-  <div class="about">这是test路由页面</div>
+  <div class="about">这是/home路由页面</div>
+  <hr />
+  <b>自定义v-model的使用：</b>
   <custom-input
     v-model:first-name.capitalize="nameOfFirst"
     v-model:last-name.capitalize="nameOfLast"

@@ -24,7 +24,6 @@ export default {
 
 <style scoped>
 .slot {
-  margin-top: 30px;
-  border: 1px solid;
+  /* margin-top: 30px; */
 }
 </style>

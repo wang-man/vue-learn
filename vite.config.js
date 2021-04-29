@@ -11,4 +11,9 @@ export default defineConfig({
       '@': resolve(__dirname, "src") //设置别名
     }
   },
+  base: './',
+  server: {
+    port: 8000,
+    open: true
+  }
 })
