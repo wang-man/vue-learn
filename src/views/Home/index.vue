@@ -17,16 +17,27 @@
       {{ slotProps.user.firstName }}
     </template>
   </current-user>
+
+  <hr />
+  <b>v-is指令的作用：</b>
+  <ul>
+    <li v-is="'some-component'"></li>
+  </ul>
+  <hr />
+  <b>:is属性的作用：</b>
+  <component :is="'someComponent'"></component>
 </template>
 
 <script>
 import CustomInput from "@/components/v-model/CustomInput.vue";
 import CurrentUser from "@/components/slot/CurrentUser.vue";
+import SomeComponent from "@/components/someComponent/index.vue";
 export default {
-  name: "About",
+  name: "Home",
   components: {
     CustomInput,
     CurrentUser,
+    SomeComponent,
   },
   props: {},
   data() {

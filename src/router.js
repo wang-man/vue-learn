@@ -27,14 +27,14 @@ console.log(router.getRoutes())   // [{…}, {…}, {…}]  routes中的路由�
 
 // 全局路由守卫
 // 全局前置钩子
-router.beforeEach((to, from, next) => {
-  if (to.path == '/login' || to.path == '/register') {
-    next();   // 必须执行next，否则路由不会渲染
-  } else {
-    alert('您还没有登录，请先登录');
-    next('/login');
-  }
-})
+// router.beforeEach((to, from, next) => {
+//   if (to.path == '/login' || to.path == '/register') {
+//     next();   // 必须执行next，否则路由不会渲染
+//   } else {
+//     alert('您还没有登录，请先登录');
+//     next('/login');
+//   }
+// })
 // 全局后置钩子
 router.afterEach((to, from) => {
   console.log('to=>', to)
